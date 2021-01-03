@@ -164,7 +164,7 @@ class ge::gl::Texture: public OpenGLObject{
   GEGL_EXPORT std::string getInfo()const;
   GEGL_EXPORT unsigned long long getSize()const;
   GEGL_EXPORT unsigned long long getLevelSize(GLint level)const;
-  private:
+  protected:
   inline GLint _getTexLevelParameter(GLint level,GLenum pname)const;
   inline GLint _getTexParameter (GLenum pname)const;
   inline void  _getTexParameterf(GLfloat*data,GLenum pname)const;
